@@ -50,7 +50,7 @@ bodyAudio.volume = 0.8;
 clapAudio.volume = 0.3
 yeahAudio.volume = 0.4
 buzzAudio.volume = 0.4
-backAudio.volume = 0.08
+backAudio.volume = 0.05
 
 var isOff = false;
 

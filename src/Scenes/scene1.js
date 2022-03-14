@@ -49,9 +49,9 @@ const Scene1 = React.forwardRef(({ nextFunc, _geo, _baseGeo }, ref) => {
         useRef(),
     ]
 
-    if (isShow) {
-        introHolder.current.style.top = '-7%'
-    }
+    // if (isShow) {
+    //     introHolder.current.style.top = '-7%'
+    // }
 
 
 
@@ -80,13 +80,13 @@ const Scene1 = React.forwardRef(({ nextFunc, _geo, _baseGeo }, ref) => {
         imageCount == 11
 
 
-        timerList[0] = setTimeout(() => {
-            timerList[1] = setTimeout(() => {
-                introHolder.current.style.top = '-7%'
-                introText.current.className = 'introText'
-            }, 300);
-            setShow(true)
-        }, 1000);
+        // timerList[0] = setTimeout(() => {
+        //     timerList[1] = setTimeout(() => {
+        //         introHolder.current.style.top = '-7%'
+        //         introText.current.className = 'introText'
+        //     }, 300);
+        //     setShow(true)
+        // }, 1000);
 
         setTimeout(() => {
             // audioList.titleAudio.play();
@@ -110,7 +110,7 @@ const Scene1 = React.forwardRef(({ nextFunc, _geo, _baseGeo }, ref) => {
         }, 3000);
 
         imageCount = 0;
-        introHolder.current.style.top = '-40%'
+        // introHolder.current.style.top = '-40%'
 
         // playBtnRef.current.style.pointerEvents = 'none'
         // if (playBtnRef.current != null)
@@ -179,7 +179,8 @@ const Scene1 = React.forwardRef(({ nextFunc, _geo, _baseGeo }, ref) => {
                 style={{
                     position: "fixed", width: _baseGeo.width * 0.45 + "px"
                     , left: _baseGeo.left + _baseGeo.width * 0.275 + "px",
-                    transition: '0.5s'
+                    top: '-7%',
+                    // transition: '0.5s'
                 }}>
                 <img draggable={false} width={"100%"}
                     onLoad={loadImage}
@@ -189,7 +190,7 @@ const Scene1 = React.forwardRef(({ nextFunc, _geo, _baseGeo }, ref) => {
 
             <div
                 ref={introText}
-                className='hide'
+                // className='hide'
                 style={{
                     position: "fixed", width: _baseGeo.width * 0.25 + "px"
                     , left: _baseGeo.left + _baseGeo.width * 0.375 + "px",
